@@ -27,7 +27,7 @@ yum install https://download.virtualbox.org/virtualbox/6.1.2/VirtualBox-6.1-6.1.
 yum install https://releases.hashicorp.com/vagrant/2.2.7/vagrant_2.2.7_x86_64.rpm
 ```
 
-#### 3. Add Vagrant 'Box' providers, install VirtualBox Guest Plugin
+### 3. Add Vagrant 'Box' providers, install VirtualBox Guest Plugin
 ```
 ## [user] import VM providers
 vagrant box add bento/centos-7.7 --provider virtualbox
@@ -37,7 +37,7 @@ vagrant box add bento/centos-8 --provider virtualbox
 vagrant plugin install vagrant-vbguest
 ```
 
-#### 4. Start up desired VM(s)
+### 4. Start up desired VM(s)
 ```
 cd "$HOME/vagrant-centos-sandbox"
 vagrant up $vmName
@@ -52,7 +52,7 @@ For reference:
 | centos8-web | CentOS 8.0 | httpd, mariadb-server |
 | centos8-ha | CentOS 8.0 | httpd, mariadb-server, epel repo, varnish, haproxy |
 
-#### 5. Enter VM and you're done
+### 5. Enter VM and you're done
 ```
 vagrant ssh $vmName
 	# base un/pw: vagrant // vagrant
